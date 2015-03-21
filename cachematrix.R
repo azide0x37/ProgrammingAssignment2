@@ -12,4 +12,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+	y <<- x_inv
+	if (!is.NA(y)) {
+		y <- solve(x)
+		return y
+	}
 }
